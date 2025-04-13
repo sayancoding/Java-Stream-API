@@ -1,0 +1,4 @@
+** Java 8 Onward, Stream Cant be reused.
+** Input Source --> intermediate operations --> terminate operation
+** Intermediate operation can be chained multiple but Once Terminate operation has happened, We can do nothing.
+** Intermediate ops always return new modified Stream
