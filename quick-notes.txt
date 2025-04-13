@@ -2,3 +2,4 @@
 ** Input Source --> intermediate operations --> terminate operation
 ** Intermediate operation can be chained multiple but Once Terminate operation has happened, We can do nothing.
 ** Intermediate ops always return new modified Stream
+** for each topic details go through code itself

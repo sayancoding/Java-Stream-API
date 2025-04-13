@@ -1,6 +1,4 @@
 # Java Stream API Docs
-
-`Stream.empty()` -> Initialize Empty String instead of NULL
 ```
-Stream<String> streamEmpty = Stream.empty();
+Short note/comments are there on code itself 
 ```
