@@ -1,54 +1,56 @@
 # Java Stream API Examples
 
-This repository provides a collection of examples demonstrating various features of the Java Stream API. The Java Stream API is a powerful tool for processing collections of data in a functional and declarative style.
+## Overview
 
-## Introduction to the Java Stream API
+This repository showcases the use of Java Stream API with practical examples. Java Stream API, introduced in Java 8, provides a functional approach to process collections of objects. It allows developers to perform complex data manipulations in a concise and readable manner.
 
-The Java Stream API, introduced in Java 8, provides a way to process collections of objects in a sequence or in parallel. Streams are sequences of elements that support various aggregate operations. They are designed to make collection processing more efficient and easier to read.
+## Structure
 
-Key features of the Stream API include:
+The repository is structured as follows:
 
-*   **Functional Programming:** Streams encourage a functional programming style, using lambda expressions to perform operations on data.
-*   **Pipelines:** Stream operations can be chained together to form a pipeline, where each operation transforms the stream in some way.
-*   **Laziness:** Many stream operations are lazy, meaning they are only executed when the result is actually needed.
-*   **Parallelism:** Streams can be processed in parallel, allowing for significant performance improvements when working with large datasets.
-
-## Repository Contents
-
-This repository contains the following Java files, each demonstrating a specific aspect of the Java Stream API:
-
-*   **S1_EmptyStream.java:** Demonstrates how to create an empty stream.
-*   **S2_StreamCreation.java:** Shows various ways to create streams from different sources, such as collections, arrays, and individual values.
-*   **S3_StreamCollection.java:** Explores how to collect stream elements into different data structures, such as lists, sets, and maps.
-*   **S4_StreamReducer.java:** Illustrates how to use the `reduce` operation to combine stream elements into a single result.
-*   **S5_IntermediateOps.java:** Demonstrates various intermediate operations, such as `filter`, `map`, `sorted`, and `distinct`.
-*   **S6_TerminationOps.java:** Shows different terminal operations, such as `forEach`, `toArray`, `findFirst`, and `anyMatch`.
-*   **S7_ParallelStream.java:** Demonstrates how to create and use parallel streams for improved performance.
-*   **S8_FlatMap.java:** Explains how to use the `flatMap` operation to flatten a stream of collections into a single stream.
-*   **S9_NestedMapping.java:** Demonstrates how to work with nested data structures using streams and mapping.
+-   **S1\_EmptyStream.java:** Demonstrates the creation of an empty stream.
+-   **S2\_StreamCreation.java:** Illustrates various methods to create streams from different sources such as collections, arrays, and individual elements.
+-   **S3\_StreamCollection.java:** Shows how to collect elements from a stream into different data structures like lists, sets, and maps.
+-   **S4\_StreamReducer.java:** Explains the usage of the `reduce` operation to combine stream elements into a single summarized result.
+-   **S5\_IntermediateOps.java:** Covers intermediate stream operations like `filter`, `map`, `sorted`, and `distinct` to transform and filter stream elements.
+-   **S6\_TerminationOps.java:** Demonstrates terminal operations such as `forEach`, `toArray`, `findFirst`, and `anyMatch` that produce a result or side-effect.
+-   **S7\_ParallelStream.java:** Shows how to leverage parallel streams to improve performance on multi-core processors.
+-   **S8\_FlatMap.java:** Explains how to use `flatMap` operation to flatten a stream of collections into a single stream.
+-   **S9\_NestedMapping.java:** Demonstrates the use of streams with nested data structures and mapping operations.
+-   **model/:** Contains the optional model used to test stream operations
 
 ## Getting Started
 
-To run the examples in this repository, you will need:
+### Prerequisites
 
-*   Java Development Kit (JDK) 8 or later
-*   A suitable IDE or text editor
+-   Java Development Kit (JDK) 8 or higher
 
-1.  Clone the repository to your local machine:
+### Running the Examples
+
+1.  Clone the repository:
 
     ```bash
     git clone https://github.com/sayancoding/Java-Stream-API.git
     ```
 
-2.  Open the project in your IDE or text editor.
+2.  Navigate to the cloned directory.
 
-3.  Compile and run the Java files. For example, to run `S1_EmptyStream.java`, you can use the following command:
+3.  Compile the Java files:
 
     ```bash
-    javac S1_EmptyStream.java
+    javac *.java model/*.java
+    ```
+
+4.  Run the desired example:
+
+    ```bash
     java S1_EmptyStream
     ```
 
 ## Contributing
 
-Contributions to this repository are welcome! If you have any suggestions or improvements, feel free to submit a pull request.
+Contributions are welcome. Please submit a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
